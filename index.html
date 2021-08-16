@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+    padding:0;
+    margin:10;
+    box-sizing: border-box;
+}
 
+h1{
+    background-image: url("https://1r65612jvqxn8fcup46pve6b-wpengine.netdna-ssl.com/wp-content/uploads/2018/05/grf-bg.jpg");
+    text-align: center;
+
+}
+    body{
+    background: black;
+    margin: 30px;
+    border-width: 10px;
+    border-color: gray;
+}
+
+.board{
+    
+    position: absolute;
+    border: 2px solid black;
+    
+}
+.board:hover {
+    
+    box-sizing: border-box;
+    cursor: pointer;
+    
+}
+.cell{
+    
+    position: absolute;
+    border: 2px solid black;
+}
+
+.cell:hover {
+    box-shadow: inset 0px 0px 0px 2px black;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+#timer {
+    width: 170px;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid #999;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 9px;
+    color: black;
+    background-color: #999;
+    box-shadow: 0px 0px 20px #FFF;
+    text-shadow: 0px 0px 10px #000;
+    cursor: pointer;
+    font-family: 'Arial';
+    font-size: 25px;
+}
+
+#timers:hover {
+    top: 25%;
+    color: #BA6F00;
+    text-shadow: 0px 0px 10px #BA6F00;
+}
+#score {
+    size:0px;
+}
+
+#pattern_board{
+    top:22%;
+    left:44%;
+}
+
+#player_board{
+    
+    top: 50%;
+    left:35%;
+    transform:translate(-50%, -50%);
+}
+        </style>
+        <title>Colour Tiles</title>
+        <h1>COLOUR TILES</h1>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+
+        <link href = "./style.css" rel = "stylesheet">
+    </head>
+    
+    <body>
+        <div id="score"></div>
+        <div id="timer"></div>
+        <div id="player_board" class="board"></div>
+        <div id="pattern_board" class="board"></div>
+        <script src = "script.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>            
+</html>
